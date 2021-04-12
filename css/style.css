@@ -1,0 +1,137 @@
+:root {
+  --color-gov: #3366cc;
+  --color-gov-dark: #004088;
+  --white: white;
+}
+
+html {
+  margin: 0 !important;
+  padding: 0 !important;
+  font-size: 14px;
+}
+
+ul,
+li,
+li a {
+  list-style: none;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+/**Alto contraste */
+.contrast {
+  color: white !important;
+  background-color: black !important;
+}
+
+.color_govco {
+  background-color: var(--color-gov);
+}
+
+/** Buscador */
+.searchBox {
+  position: relative;
+  background: transparent;
+  height: 36px;
+  border-radius: 36px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: white;
+  width: 200px;
+  padding: 4px 4px;
+  margin-top: 6px;
+}
+
+.searchButton {
+  color: transparent;
+  float: right;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border-color: transparent;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+::placeholder {
+  color: var(--white);
+}
+.searchButton i {
+  color: var(--color-gov);
+}
+
+.searchInput {
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  color: var(--white);
+  font-size: 14px;
+  line-height: 30px;
+  width: 80%;
+  padding: 0;
+  margin-top: -2px;
+}
+.searchBox::placeholder {
+  color: var(--white) !important;
+}
+
+@media screen and (max-width: 620px) {
+  .searchBox:hover > .searchInput {
+    width: 150px;
+    padding: 0 6px;
+  }
+}
+
+/** Accesibilidad */
+.bg-accesibilidad {
+  background-color: var(--color-gov-dark);
+  width: 100%;
+  height: 100%;
+  border-radius: 0 0 10px 10px;
+}
+.icon-accesibilidad {
+  color: var(--color-gov-dark);
+  background-color: var(--white);
+  border-radius: 30%;
+  padding: 1px;
+  margin: 5px 0 0 5px;
+  font-size: 28px !important;
+}
+
+#toggle {
+  display: inline-block;
+  width: 40px;
+  height: 42px;
+  margin: 0px 0 0 20px;
+  justify-content: flex-end;
+}
+
+#toggle.on + #menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* menu componentes accesibilidad */
+#menu {
+  position: absolute;
+  float: right !important;
+  margin-left: 120px;
+  width: 150px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 4px;
+  background: transparent;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.7s;
+}
+
+.relativa {
+  font-size: 1.2rem;
+}
+.zoom {
+  font-size: 26px;
+}
