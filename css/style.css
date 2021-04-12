@@ -58,8 +58,9 @@ li a {
 ::placeholder {
   color: var(--white);
 }
-.searchButton i {
-  color: var(--color-gov);
+.govco-icon-accessibility-cp,
+.govco-icon-search-cp {
+  font-size: 25px !important;
 }
 
 .searchInput {
@@ -76,13 +77,6 @@ li a {
 }
 .searchBox::placeholder {
   color: var(--white) !important;
-}
-
-@media screen and (max-width: 620px) {
-  .searchBox:hover > .searchInput {
-    width: 150px;
-    padding: 0 6px;
-  }
 }
 
 /** Accesibilidad */
@@ -129,9 +123,34 @@ li a {
   transition: opacity 0.7s;
 }
 
+/** estos estilos son de prueba*/
 .relativa {
   font-size: 1.2rem;
 }
 .zoom {
   font-size: 26px;
+}
+
+@media (max-width: 768px) {
+  .top_govco {
+    display: flex;
+    margin: 0;
+  }
+  .top_govco-right {
+    justify-content: flex-end;
+  }
+  ul.nav.navbar-nav {
+    padding: 0;
+    margin: 0;
+  }
+  .navbar-header {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 50px;
+  }
+  .navbar-right {
+    display: flex;
+    width: 100%;
+  }
 }
