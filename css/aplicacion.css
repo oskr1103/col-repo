@@ -1,0 +1,125 @@
+/*@import url("../../../../base/estilos/base.css");*/
+/* @import url("../../../../base/estilos/baseNueva.css"); */
+
+.menu .submenu {
+  background: #e6ecf5;
+}
+
+.pubUtilidades li:first-child,
+.pubUtilidades li:nth-child(6) {
+  display: none;
+}
+
+/***** Slide Principal *****/
+
+/***** Portal Activo *****/
+.portales .slick-slide {
+  opacity: 1;
+}
+.portales .slick-slide:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+/***** Servicios *****/
+.servicios .slick-slider {
+  border: 1px solid #ddd;
+}
+.hoverImg .thumbnail .caption {
+  height: initial;
+}
+
+/***** Noticias *****/
+
+.Noticias .pubHisto.col-md-6 {
+  width: 33%;
+  padding-bottom: 5px;
+  display: inline-block;
+
+  float: none;
+
+  vertical-align: top;
+}
+.Noticias .pubHisto.col-md-6 .pubHistoImagen img {
+  width: 100%;
+}
+
+.noticias .tituloPublis strong {
+  max-height: 80px;
+  overflow: hidden;
+}
+.noticias .tituloPublis {
+  margin-top: 15px;
+}
+
+.historicoPubli a {
+  background-color: #526e9e;
+  color: #fff;
+}
+
+#infoPrincipal .historicoPubli a {
+  font-size: 1.1em !important;
+  padding: 5px 15px !important;
+}
+
+p.contenedorEnlacePub {
+  float: none !important;
+}
+p.contenedorEnlacePub .enlacePub {
+  background-color: #95b94e;
+  border-radius: 10px;
+}
+
+.pubHisto {
+  margin-bottom: 10px;
+}
+.pubHisto .pubHistoNombre {
+  background-color: #2c4591;
+  text-align: center;
+  font-size: 1em;
+  padding: 10px;
+  margin-top: 5px;
+}
+.pubHisto .pubHistoNombre a {
+  color: #ffffff;
+}
+
+#infoPrincipal div.pub .imgAsociada {
+  width: 100%;
+  max-width: 100% !important;
+  margin: 0 0 20px 0 !important;
+}
+
+.publiNotisMulti .contenedorEnlacePub {
+  float: right !important;
+}
+.publiNotisMulti .contenedorEnlacePub a {
+  background-color: #526e9e;
+}
+
+/***** Bloque Imagen con titulo *****/
+.imagenHome .enlacePub {
+  top: 0;
+  bottom: initial;
+}
+
+/***** Tablas publicaciones *****/
+table.tablePub tbody tr td:first-child,
+table.tablePub tbody td a {
+  color: #526e9e;
+}
+
+@media only screen and (max-width: 991px) {
+  .sliderPpal .bx-wrapper .panelPhGa-overlay {
+    color: #526e9e;
+  }
+
+  .Noticias .pubHisto.col-md-6 {
+    width: 100%;
+  }
+}
+
+/*Iframe facebook*/
+.facebookHeight {
+  height: 180px;
+  width: 340px;
+}

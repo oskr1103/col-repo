@@ -108,8 +108,23 @@ li a {
   visibility: visible;
 }
 
+/**Icono FR*/
+.govco-icon-language-fr-n {
+  background-color: white;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 5px;
+  text-align: center;
+}
+.govco-icon-language-fr-n::before {
+  content: "FR";
+  color: #3366cc;
+  font-family: "Work Sans", sans-serif;
+  font-size: 0.89rem;
+}
+
 /* menu componentes accesibilidad */
-#menu {
+#menu_accesibilidad_top {
   position: absolute;
   float: right !important;
   margin-left: 120px;

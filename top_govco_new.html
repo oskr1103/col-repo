@@ -17,7 +17,8 @@
     <link href="css/style.css" rel="stylesheet" />
     <!-- gov.co CDN -->
     <link href="css/gov_co.css" rel="stylesheet" />
-    <link href="css/colpensiones.css" rel="stylesheet" />
+    <link href="css/aplicacion.css" rel="stylesheet" />
+    <link href="css/baseNueva.css" rel="stylesheet" />
   </head>
   <body>
     <div class="navbar-govco" role="navigation">
@@ -63,11 +64,17 @@
                     <span class="govco-icon govco-icon-contrast-n"></span>
                     <label> Contraste </label>
                   </a>
-                  <a class="max-fontsize aumentar">
+                  <a
+                    id="aumentar_btn_accesibilidad"
+                    class="max-fontsize aumentar"
+                  >
                     <span class="govco-icon govco-icon-more-size-n"></span>
                     <label class="align-middle"> Aumentar letra </label>
                   </a>
-                  <a class="min-fontsize disminuir">
+                  <a
+                    id="disminuir_btn_accesibilidad"
+                    class="min-fontsize disminuir"
+                  >
                     <span class="govco-icon govco-icon-less-size-n"></span>
                     <label class="align-middle"> Reducir letra </label>
                   </a>
@@ -91,43 +98,11 @@
         </div>
       </div>
     </div>
-    <h1 class="icon-pensiones"></h1>
-    <p class="zoom">
-      Integer nisi justo, faucibus at ultricies in, mattis eget leo. Morbi nec
-      erat bibendum, aliquet quam eget, bibendum sapien. Curabitur ac risus
-      vulputate lectus dignissim venenatis. Ut ac erat convallis metus maximus
-      sollicitudin. Fusce ut dui arcu. Proin lacinia velit ac ligula dapibus,
-      quis venenatis dui volutpat. Nullam rhoncus erat sit amet placerat mattis.
-      Vestibulum gravida pellentesque magna non viverra. Suspendisse suscipit
-      turpis ut turpis rutrum semper. Quisque vitae luctus neque, quis vulputate
-      massa. Aliquam vestibulum aliquam consectetur. Mauris ut nibh a dolor
-      viverra luctus. Nam et erat viverra, rutrum quam eget, suscipit quam.
-      Mauris a euismod libero. Aliquam eu odio vel sapien pellentesque
-      elementum. Curabitur purus sapien, aliquam eget eros at, viverra viverra
-      lorem.
-    </p>
-
-    <p class="relativa">
-      Integer nisi justo, faucibus at ultricies in, mattis eget leo. Morbi nec
-      erat bibendum, aliquet quam eget, bibendum sapien. Curabitur ac risus
-      vulputate lectus dignissim venenatis. Ut ac erat convallis metus maximus
-      sollicitudin. Fusce ut dui arcu. Proin lacinia velit ac ligula dapibus,
-      quis venenatis dui volutpat. Nullam rhoncus erat sit amet placerat mattis.
-      Vestibulum gravida pellentesque magna non viverra. Suspendisse suscipit
-      turpis ut turpis rutrum semper. Quisque vitae luctus neque, quis vulputate
-      massa. Aliquam vestibulum aliquam consectetur. Mauris ut nibh a dolor
-      viverra luctus. Nam et erat viverra, rutrum quam eget, suscipit quam.
-      Mauris a euismod libero. Aliquam eu odio vel sapien pellentesque
-      elementum. Curabitur purus sapien, aliquam eget eros at, viverra viverra
-      lorem.
-    </p>
-
     <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
       crossorigin="anonymous"
     ></script>
-
     <script>
       var theToggle = document.getElementById("toggle");
 
@@ -169,23 +144,25 @@
         toggleClass(this, "on");
         return false;
       };
-      var local = localStorage.getItem("colpensionesAcc") != null;
+
+      var local = localStorage.getItem("colpensionesAcc");
+      var size = local ? local : $("html").css("font-size");
 
       function letterSize() {
         if (local) {
-          size = $("html").css(
-            "font-size",
-            localStorage.getItem("colpensionesAcc")
-          );
+          size = local;
+          size = parseInt(size, 10);
+          $("html").css("font-size", localStorage.getItem("colpensionesAcc"));
         } else {
-          size = $("html").css("font-size");
+          size = 16;
+          $("html").css("font-size", "16px");
         }
-        size = parseInt(size, 10);
       }
 
       letterSize();
 
-      $(".aumentar").on("click", function () {
+      $("#aumentar_btn_accesibilidad").on("click", () => {
+        console.log("aumentar");
         if (size + 2 <= 22) {
           $("html").css("font-size", "+=2");
           localStorage.setItem("colpensionesAcc", $("html").css("font-size"));
@@ -197,7 +174,8 @@
         }
       });
 
-      $(".disminuir").on("click", function () {
+      $("#disminuir_btn_accesibilidad").on("click", () => {
+        console.log("disminuir");
         if (size - 2 >= 10) {
           $("html").css("font-size", "-=2");
           localStorage.setItem("colpensionesAcc", $("html").css("font-size"));
@@ -209,7 +187,8 @@
         }
       });
 
-      $("#btn-contrast").click(function () {
+      $("#btn-contrast").on("click", () => {
+        console.log("contraste");
         $("body").toggleClass("contrast");
       });
     </script>
