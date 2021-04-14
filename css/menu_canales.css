@@ -1,3 +1,19 @@
+/** Estilo global para barra scroll*/
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #f8fafd;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #476ea8;
+  border-radius: 20px;
+  border: 1px solid #f8fafd;
+}
+
 /**Estilos menu_canales*/
 
 .menu_canales-item,
