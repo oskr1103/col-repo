@@ -23,6 +23,9 @@
   align-items: center;
   justify-content: center;
 }
+.botones_destacados-btn:hover i {
+  color: #fff;
+}
 .botones_destacados-btni {
   background-color: #e6e6e6;
   width: 144px;
@@ -30,4 +33,9 @@
   border-radius: 50%;
   border-color: transparent;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.35);
+  transition: 0.5s;
+}
+.botones_destacados-btni:hover {
+  background-color: #00993e;
+  transform: scale(1.1);
 }
