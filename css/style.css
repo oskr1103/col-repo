@@ -103,7 +103,7 @@ li a {
   justify-content: flex-end;
 }
 
-#toggle.on + #menu {
+#toggle.on + #menu_accesibilidad_top {
   opacity: 1;
   visibility: visible;
 }

@@ -1,0 +1,33 @@
+.botones_destacados {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: -100px;
+  padding-top: 5px;
+}
+.botones_destacados-btn {
+  width: 166px;
+  height: 166px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  border-collapse: separate;
+  border-spacing: 10px 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.botones_destacados-btn i {
+  color: #999999;
+  font-size: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.botones_destacados-btni {
+  background-color: #e6e6e6;
+  width: 144px;
+  height: 144px;
+  border-radius: 50%;
+  border-color: transparent;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.35);
+}
