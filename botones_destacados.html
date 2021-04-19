@@ -13,8 +13,6 @@
       crossorigin="anonymous"
     />
 
-    <!-- propios -->
-    <link href="css/botones_destacados.css" rel="stylesheet" />
     <!-- gov.co CDN -->
     <link href="css/gov_co.css" rel="stylesheet" />
     <link href="css/aplicacion.css" rel="stylesheet" />
@@ -22,20 +20,86 @@
     <link href="css/colpensiones.css" rel="stylesheet" />
     
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-
     
+    
+    <!-- propios -->
+    <style>
+      .botones_destacados {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: -100px;
+        padding-top: 5px;
+      }
+      .botones_destacados-btn {
+        width: 166px;
+        height: 166px;
+        background-color: transparent;
+        border-radius: 50%;
+        border: 1px solid #fff;
+        border-collapse: separate;
+        border-spacing: 10px 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .botones_destacados-btn i {
+        color: #999999;
+        font-size: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .botones_destacados-btn:hover i {
+        color: #fff;
+      }
+      .botones_destacados-btni {
+        background-color: #e6e6e6;
+        width: 144px;
+        height: 144px;
+        border-radius: 50%;
+        border-color: transparent;
+        box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.35);
+        transition: 0.5s;
+      }
+      .botones_destacados-btni:hover {
+        background-color: #00993e;
+        transform: scale(1.1);
+      }
+      .botones_destacados-p{
+        width: 144px;
+        font-size: 2.2rem;
+        text-transform: uppercase;
+        color: #999999;
+        text-align: center;
+        line-height: 14px;
+        letter-spacing: -1px;
+        margin: 20px auto 10px auto;
+      }
+      .botones_destacados-p span{
+        font-size: 1.5rem;
+        color: #999999;
+        line-height: 14px;
+        letter-spacing: 0;
+      }
+      .botones_destacados-p span::before {
+        content: '\A';
+        white-space: pre;
+
+      }
+
+    </style>
   </head>
   <body>
 
 
 <div class="container" style="background-color: #3FB4D1">
     <div class="botones_destacados">
-        <div class="botones_destacados-btn"><i class="botones_destacados-btni icon-pensiones"></i></div>
-        <div class="botones_destacados-btn"><i class="botones_destacados-btni icon-exterior"></i></div>
-        <div class="botones_destacados-btn"><i class="botones_destacados-btni icon-beps"></i></div>
-        <div class="botones_destacados-btn"><i class="botones_destacados-btni icon-educacion"></i></div>
-        <div class="botones_destacados-btn"><i class="botones_destacados-btni icon-empleador"></i></div>
-        <div class="botones_destacados-btn"><i class="botones_destacados-btni icon-sede"></i></div>
+        <a><div class="botones_destacados-btn"><i class="botones_destacados-btni icon-pensiones"></i></div><p class="botones_destacados-p" title="Pensiones y afiliaciones">Pensiones <span> y afiliaciones</span></p></a>
+        <a><div class="botones_destacados-btn"><i class="botones_destacados-btni icon-exterior"></i></div><p class="botones_destacados-p" title="Colombianos en el exterior"> Colombianos <span> en el exterior</span></p></a>
+        <a><div class="botones_destacados-btn"><i class="botones_destacados-btni icon-beps"></i></div><p class="botones_destacados-p" title="BEPS">BEPS </p></a>
+        <a><div class="botones_destacados-btn"><i class="botones_destacados-btni icon-educacion"></i></div><p class="botones_destacados-p" title="Eduación y bienestar">Educación <span> y bienestar </span></p></a>
+        <a><div class="botones_destacados-btn"><i class="botones_destacados-btni icon-empleador"></i></div><p class="botones_destacados-p" title="Empleador">Empleador </p></a>
+        <a><div class="botones_destacados-btn"><i class="botones_destacados-btni icon-sede"></i></div><p class="botones_destacados-p" title="Sede electronica">sede <span> electronica </span></p></a>
     </div>
 </div>
 
