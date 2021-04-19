@@ -12,9 +12,6 @@
       integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
       crossorigin="anonymous"
     />
-
-    <!-- propios -->
-    <link href="css/banner_inferior.css" rel="stylesheet" />
     <!-- gov.co CDN -->
     <link href="css/gov_co.css" rel="stylesheet" />
     <link href="css/aplicacion.css" rel="stylesheet" />
@@ -22,6 +19,173 @@
     <link href="css/colpensiones.css" rel="stylesheet" />
     
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    
+        <!-- propios -->
+    <style>
+      /** Omitir esta clase*/
+      .espacio-superior {
+        height: 350px;
+        width: 100%;
+        background-color: violet;
+      }
+
+      /**Alejandro aqui dejo el botón para poderlo usar en el global de hecho no le coloque nombre de este componente, porfa si puedes o si te parece lo usamos así sino lo dejamos para este componente*/
+
+      .button-verMas{
+        display: flex;
+        justify-content: center;
+        margin-top: 3rem;
+      }
+      .button-verMas p{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 124px;
+        height: 44px;
+        color: white;
+        font-size: 1.6rem;
+        font-weight: bold;
+        background-color: #005695;
+        border-radius: 22px;
+        transition: 0.3s;
+      }
+      .button-verMas p:hover{
+        background-color: white;
+        color: #005695;
+        box-shadow: 0 2px 5px 3px rgba(0, 0, 0, 0.2);
+      }
+
+      /**Puede ser una clase global para usar como divisor */
+      .divisor-circular {
+        width: 100%;
+        height: 100px;
+        position: relative;
+        top: -168px;
+        padding: 0;
+        margin: 0;
+      }
+      .divisor-circular svg{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+      }
+
+      /**Estilos banner_inferior*/
+      .banner_inferior {
+        width: 100%;
+        height: 480px;
+        margin-top: 53px;
+        background: linear-gradient(
+          90deg,
+          rgba(68, 197, 78, 1),
+          rgba(79, 225, 158, 1) 46%,
+          rgba(78, 222, 150, 1) 57%,
+          rgba(63, 180, 209, 1) 100%
+        );
+      }
+      .banner_inferior-img {
+        position: relative;
+        top: -73px;
+        width: 100%;
+        align-items: flex-end;
+      }
+      .banner_inferior-title{
+        margin-top: 1.8rem;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        color: #005695;
+      }
+      .banner_inferior-title::before{
+        content: '__';
+      }
+      .banner_inferior-subtitle{
+        font-size: 3rem;
+        color: white;
+        text-align: center;
+        font-weight: bold;
+        line-height: 3rem;
+        margin-top: 3rem;
+
+      }
+      .banner_inferior-subtitle span{
+        font-size: 4rem;
+        color: white;
+        text-align: center;
+        font-weight: bold;
+        line-height: 3rem;
+
+
+      }
+      .banner_inferior-subtitle span::before {
+        content: '\A';
+        white-space: pre;
+      }
+
+      .banner_inferior-botton{
+        font-size: 3.4rem;
+        color: white;
+        text-align: center;        
+        line-height: 4rem;
+        margin-top: 5rem;
+      }
+      .banner_inferior-botton span{
+        font-size: 3.4rem;
+        color: white;
+        text-align: center;
+        font-weight: bold;
+        line-height: 4rem;
+      }
+      .banner_inferior-botton span::before {
+        content: '\A';
+        white-space: pre;
+      }
+      
+
+      /**media query */
+      @media (max-width: 1200px) {
+        .banner_inferior-img {
+        position: relative;
+        top: 30px;
+        width: 100%;
+        align-items: flex-end;
+        }
+        .divisor-circular {
+        width: 100%;
+        height: 100px;
+        position: relative;
+        top: -50px;
+        padding: 0;
+        margin: 0;
+      }
+      .banner_inferior-containerLeft{
+        margin-left: 1.1rem;
+      }
+      }
+      @media (max-width: 992px) {
+        .banner_inferior{
+          height: 380px;
+        }   
+        .banner_inferior-img {
+        display: none;
+        }
+        .divisor-circular {
+        width: 100%;
+        height: 100px;
+        position: relative;
+        top: 285px;
+        padding: 0;
+        margin: 0;
+      }   
+      }
+      @media (max-width: 768px) {
+        .banner_inferior-img, .divisor-circular svg{
+          display: none;
+        }        
+      }
+
+    </style>
 
     
   </head>
@@ -29,14 +193,23 @@
 
 
     <div class="container">
-        <div class="espacio-superior"></div>
         <div class="banner_inferior">
-            <div class="row">
-                <div class="col-md-4">hola </div>
-                <div class="col-md-8"><img class="banner_inferior-img" src="./assets/img/img_banner_inf.png" alt=""></div>
+            <div class="row banner_inferior-containerLeft">
+                <div class="col-md-4">
+                  <p class="banner_inferior-title" title="¿no es lo que buscabas?">¿no es lo que buscabas?</p>
+                  <p class="banner_inferior-subtitle" title="Tenemos mucho mas para todos">Tenemos mucho mas <span>para todos!</span></p>
+                  <p class="banner_inferior-botton" title="Login sede electronica">Login <span>Sede electrónica</span></p>
+                  <a href="" class="button-verMas"><p title="ver mas">Ver más</p></a>
+                  
+                </div>
+                <div class="col-md-8"><img class="banner_inferior-img" src="./assets/img/img_banner_inf.png" alt="sede electronica" title="sede electronica"></div>
             </div>
+            <div class="divisor-circular">
+              <svg xmlns="http://www.w3.org/2000/svg" width="1282" height="103.001" viewBox="0 0 1282 103.001">
+              <path id="Sustracción_1" data-name="Sustracción 1" d="M1281,102H0v-1.529C28.832,92.009,65.671,84.15,109.5,77.11c43.66-7.013,93.72-13.129,148.79-18.176,55.913-5.125,116.386-9.091,179.738-11.788,65.407-2.785,133.484-4.2,202.34-4.2s136.943,1.412,202.355,4.2c63.357,2.7,123.833,6.664,179.749,11.79,55.073,5.048,105.135,11.164,148.795,18.179,43.828,7.042,80.667,14.9,109.493,23.365V0H1281V102Z" transform="translate(0.5 0.5)" fill="#fff" stroke="rgba(0,0,0,0)" stroke-miterlimit="10" stroke-width="1"/>
+            </svg>
+          </div>    
         </div>
-        <div class="divisor-circular"></div>
     </div>
 
  
