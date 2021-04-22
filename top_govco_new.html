@@ -37,15 +37,21 @@
           <ul class="nav navbar-nav">
             <li>
               <div class="searchBox">
-                <input
-                  class="searchInput"
-                  type="text"
-                  name=""
-                  placeholder="Buscar"
-                />
-                <button class="searchButton" href="#">
-                  <span class="govco-icon govco-icon-search-cp"></span>
-                </button>
+                <form
+                  action="loader.php?lServicio=Buscar&amp;lFuncion=buscarGo"
+                  class="form-horizontal search-intro"
+                  method="post"
+                >
+                  <input
+                    class="searchInput"
+                    type="text"
+                    name=""
+                    placeholder="Buscar"
+                  />
+                  <button class="searchButton" href="#">
+                    <span class="govco-icon govco-icon-search-cp"></span>
+                  </button>
+                </form>
               </div>
             </li>
           </ul>
