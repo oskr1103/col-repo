@@ -178,3 +178,81 @@ body::-webkit-scrollbar-thumb {
   transition-duration: 780ms;
   transform: translate3d(-0.25084px, -104.9997px, 0);
 }
+
+/**media query */
+@media (min-width: 1200px) {
+  .menu_canales {
+    position: fixed;
+    left: 90%;
+    top: 78%;
+    bottom: 40px;
+    right: 40px;
+    margin-left: -190px;
+    padding-top: 20px;
+    padding-left: 190px;
+    box-sizing: border-box;
+    font-size: 20px;
+    z-index: 100;
+  }
+}
+@media (max-width: 1200px) {
+  .menu_canales {
+    position: fixed;
+    left: 85%;
+    bottom: 78%;
+    bottom: 40px;
+    right: 40px;
+    margin-left: -190px;
+    padding-top: 20px;
+    padding-left: 190px;
+    box-sizing: border-box;
+    font-size: 20px;
+    z-index: 100;
+  }
+}
+@media (max-width: 768px) {
+  .menu_canales {
+    position: fixed;
+    left: 88vw;
+    top: 85vh;
+    bottom: 40px;
+    right: 20px;
+    margin-left: -190px;
+    padding-top: 20px;
+    padding-left: 190px;
+    box-sizing: border-box;
+    font-size: 20px;
+    z-index: 100;
+  }
+  .menu_canales-open:checked ~ .menu_canales-item {
+    transition-timing-function: cubic-bezier(0.935, 0, 0.34, 1.33);
+  }
+  .menu_canales-open:checked ~ .menu_canales-item:nth-child(3) {
+    transition-duration: 180ms;
+    transform: translate3d(0.08361px, -60.99997px, 0);
+  }
+  .menu_canales-open:checked ~ .menu_canales-item:nth-child(4) {
+    transition-duration: 280ms;
+    transform: translate3d(0.08361px, -125.99997px, 0);
+  }
+  .menu_canales-open:checked ~ .menu_canales-item:nth-child(5) {
+    transition-duration: 380ms;
+    transform: translate3d(0.08361px, -190.99997px, 0);
+  }
+  .menu_canales-open:checked ~ .menu_canales-item:nth-child(6) {
+    transition-duration: 480ms;
+    transform: translate3d(0.08361px, -255.99997px, 0);
+  }
+  .menu_canales-open:checked ~ .menu_canales-item:nth-child(7) {
+    transition-duration: 580ms;
+    transform: translate3d(0.08361px, -320.99997px, 0);
+  }
+  .menu_canales-open:checked ~ .menu_canales-item:nth-child(8) {
+    transition-duration: 680ms;
+    transform: translate3d(0.08361px, -385.99997px, 0);
+  }
+  .menu_canales-open:checked ~ .menu_canales-item:nth-child(9) {
+    transition-duration: 780ms;
+    transform: translate3d(0.08361px, -400.99997px, 0);
+  }
+}
