@@ -1,0 +1,55 @@
+Informe del paquete
+
+-----------------------------------------------------------------------------
+Documento:
+Nombre: LANDING_SEDE_ELECTRONICA_v4.pdf
+Modo de color: Color RGB
+Perfil de color: ninguno
+Unidades de regla: píxeles
+Dimensiones de la mesa de trabajo: 1283 px x 2045 px
+Mostrar imágenes en modo contorno: Desactivado
+Resaltar fuentes sustituidas: Desactivado
+Resaltar glifos sustituidos: Desactivado
+Conservar capacidad de edición de texto
+Simular papel de color: Desactivado
+
+-----------------------------------------------------------------------------
+Objetos de tintas planas:
+
+-----------------------------------------------------------------------------
+Fuentes no disponibles:Ninguno
+
+-----------------------------------------------------------------------------
+Fuentes protegidas no empaquetadas:Ninguno
+
+-----------------------------------------------------------------------------
+Fuentes:
+Montserrat Regular (OTF)
+Montserrat Bold (OTF)
+Montserrat SemiBold (OTF)
+Montserrat ExtraBold (OTF)
+Montserrat Medium (OTF)
+Spartan Medium (TrueType)
+Spartan Regular (TrueType)
+Spartan SemiBold (TrueType)
+Spartan ExtraBold (TrueType)
+Spartan Thin (TrueType)
+
+-----------------------------------------------------------------------------
+Fuentes incrustadas:
+Ninguno
+
+-----------------------------------------------------------------------------
+Enlaces no disponibles:
+Ninguno
+
+-----------------------------------------------------------------------------
+Imágenes enlazadas:
+
+C:\Users\ASUS\Documents\Colpensiones\VARIOS\PWA\Sede Electrónica\LANDING_SEDE_ELECTRONICA_v4_Carpeta\Links\Captura de pantalla 2021-04-28 a la(s) 9.39.59 a.m..png
+Tipo: RGB transparente
+Bits por píxel: 32
+Canales: 4
+Tamaño: 1133K, 776 por 374 píxeles
+Dimensiones: 1554,559 por 749,233 puntos 
+Resolución: 35,941 por 35,941 píxeles por pulgada

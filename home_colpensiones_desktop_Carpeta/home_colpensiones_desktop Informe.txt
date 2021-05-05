@@ -1,0 +1,90 @@
+Informe del paquete
+
+-----------------------------------------------------------------------------
+Documento:
+Nombre: home_colpensiones_desktop.ai
+Modo de color: Color RGB
+Perfil de color: ninguno
+Unidades de regla: píxeles
+Dimensiones de la mesa de trabajo: 1283 px x 4203 px
+Mostrar imágenes en modo contorno: Desactivado
+Resaltar fuentes sustituidas: Desactivado
+Resaltar glifos sustituidos: Desactivado
+Conservar capacidad de edición de texto
+Simular papel de color: Desactivado
+
+-----------------------------------------------------------------------------
+Objetos de tintas planas:
+
+-----------------------------------------------------------------------------
+Fuentes no disponibles:Ninguno
+
+-----------------------------------------------------------------------------
+Fuentes protegidas no empaquetadas:Ninguno
+
+-----------------------------------------------------------------------------
+Fuentes:
+Montserrat Regular (OTF)
+Montserrat Bold (OTF)
+Montserrat Light (OTF)
+Montserrat SemiBold (OTF)
+Montserrat ExtraBold (OTF)
+Montserrat Medium (OTF)
+Myriad Pro (OTF)
+Spartan SemiBold (TrueType)
+Spartan Black (TrueType)
+
+-----------------------------------------------------------------------------
+Fuentes incrustadas:
+Ninguno
+
+-----------------------------------------------------------------------------
+Enlaces no disponibles:
+Ninguno
+
+-----------------------------------------------------------------------------
+Imágenes enlazadas:
+
+C:\Users\ASUS\Documents\Colpensiones\VARIOS\PWA\fotosportaleswebcolpensiones (2)\6. foto entidades operadoras de libranzas.png
+Tipo: RGB transparente
+Bits por píxel: 32
+Canales: 4
+Tamaño: 3427K, 1350 por 650 píxeles
+Dimensiones: 278,308 por 134 puntos 
+Resolución: 349,254 por 349,254 píxeles por pulgada
+
+
+C:\Users\ASUS\Documents\Colpensiones\VARIOS\PWA\fotosportaleswebcolpensiones (2)\5. foto Radicacion electronica.png
+Tipo: RGB transparente
+Bits por píxel: 32
+Canales: 4
+Tamaño: 3427K, 1350 por 650 píxeles
+Dimensiones: 286,615 por 138 puntos 
+Resolución: 339,13 por 339,13 píxeles por pulgada
+
+
+C:\Users\ASUS\Documents\Colpensiones\VARIOS\PWA\fotosportaleswebcolpensiones (2)\1. foto Portal WEB Aportante.png
+Tipo: RGB transparente
+Bits por píxel: 32
+Canales: 4
+Tamaño: 3427K, 1350 por 650 píxeles
+Dimensiones: 268,09 por 133,727 puntos 
+Resolución: 362,565 por 349,967 píxeles por pulgada
+
+
+C:\Users\ASUS\Documents\Colpensiones\VARIOS\PWA\fotosportaleswebcolpensiones (2)\1. foto Portal WEB Aportante.png
+Tipo: RGB transparente
+Bits por píxel: 32
+Canales: 4
+Tamaño: 3427K, 1350 por 650 píxeles
+Dimensiones: 268,09 por 133,727 puntos 
+Resolución: 362,565 por 349,967 píxeles por pulgada
+
+
+C:\Users\ASUS\Documents\Colpensiones\VARIOS\PWA\nuevas fotos\moreno.jpg
+Tipo: RGB
+Bits por píxel: 24
+Canales: 3
+Tamaño: 2570K, 1350 por 650 píxeles
+Dimensiones: 1294,095 por 623,083 puntos 
+Resolución: 75,11 por 75,11 píxeles por pulgada
